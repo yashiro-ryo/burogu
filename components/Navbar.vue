@@ -4,7 +4,7 @@
       <div class="navbar-title">
         <NuxtLink href="/">Blog</NuxtLink>
       </div>
-      <div class="navbar-contents">
+      <div class="navbar-contents" v-if="false">
         <div class="navbar-content">
           <NuxtLink href="/about">
             <span class="link-item">About Me</span></NuxtLink
@@ -21,9 +21,26 @@
           >
         </div>
       </div>
+      <div class="navbar-dropdown-toggle">
+        <NavbarDropdownToggle
+          :is-dropdown-open="isDropdownToggleOpen"
+          @onupdate-dropdown-toggle="onUpdateDrodpownToggle"
+        />
+      </div>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import NavbarDropdownToggle from "./parts/NavbarDropdownToggle.vue";
+import { ref } from "vue";
+
+const isDropdownToggleOpen = ref(false);
+
+const onUpdateDrodpownToggle = (isOpen: boolean) => {
+  isDropdownToggleOpen.value = isOpen;
+};
+</script>
 
 <style lang="scss" scoped>
 $navbar-height: 80px;
@@ -62,6 +79,12 @@ $navbar-height: 80px;
           }
         }
       }
+    }
+
+    .navbar-dropdown-toggle {
+      width: 2rem;
+      height: 2rem;
+      margin: auto 2rem;
     }
   }
 }
