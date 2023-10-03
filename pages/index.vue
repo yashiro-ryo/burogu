@@ -1,24 +1,17 @@
 <template>
-  <div class="main">Main Page</div>
+  <div class="main">
+    <Navbar />
+  </div>
 </template>
 
+<script setup lang="ts">
+import Navbar from "~/components/Navbar.vue";
+</script>
+
 <style lang="scss">
-@import "@/public/reset.scss";
-
-:root {
-  --background-color: #fff;
-  --text-color: #000;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #000;
-    --text-color: #fff;
-  }
-}
-
 .main {
   background-color: var(--background-color);
   color: var(--text-color);
+  min-height: 100vh;
 }
 </style>

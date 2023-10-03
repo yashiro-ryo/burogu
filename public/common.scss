@@ -1,0 +1,38 @@
+// reset css
+@import "./reset.scss";
+
+// right theme global
+:root {
+  // main
+  --background-color: #fff;
+  --text-color: #000;
+  --border-color: #c2c2c2;
+  --hover-background-color: #c2c2c2;
+
+  // navbar
+  --navbar-background-color: #dfdfdf;
+
+  // link
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+// dark theme global
+@media (prefers-color-scheme: dark) {
+  :root {
+    // main
+    --background-color: #000;
+    --text-color: #fff;
+    --border-color: #202020;
+    --hover-background-color: #383838;
+
+    // navbar
+    --navbar-background-color: #171717;
+
+    a {
+      color: #fff;
+    }
+  }
+}
