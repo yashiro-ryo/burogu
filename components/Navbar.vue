@@ -4,7 +4,7 @@
       <div class="navbar-title">
         <NuxtLink href="/">Blog</NuxtLink>
       </div>
-      <div class="navbar-contents" v-if="false">
+      <div class="navbar-contents">
         <div class="navbar-content">
           <NuxtLink href="/about">
             <span class="link-item">About Me</span></NuxtLink
@@ -43,6 +43,18 @@ const onUpdateDrodpownToggle = (isOpen: boolean) => {
 </script>
 
 <style lang="scss" scoped>
+@media screen and (min-width: 700px) {
+  .navbar-dropdown-toggle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .navbar-contents {
+    display: none !important;
+  }
+}
+
 $navbar-height: 80px;
 .navbar {
   height: $navbar-height;
