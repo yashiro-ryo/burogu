@@ -1,6 +1,8 @@
 <template>
-  <Cross v-if="isDropdownOpen" @click="onClickToggle" />
-  <Bars v-else @click="onClickToggle" />
+  <button class="dropdown-toggle-button" @click="onClickToggle">
+    <Cross v-if="isDropdownOpen" />
+    <Bars v-else />
+  </button>
   <Transition>
     <div class="dropdown" v-if="isDropdownOpen">
       <ul class="list-group">
@@ -53,6 +55,11 @@ const onClickToggle = () => {
 .v-enter-from,
 .v-leave-to {
   opacity: 0;
+}
+
+.dropdown-toggle-button {
+  width: 3rem;
+  height: 3rem;
 }
 
 .dropdown {

@@ -12,6 +12,8 @@
 .bars {
   width: 2rem;
   height: 2rem;
+  // FIXME コンポーネントの外側の位置をここで指定するのは良くない
+  margin: auto;
 
   .bar {
     width: 100%;

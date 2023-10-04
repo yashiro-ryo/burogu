@@ -11,6 +11,8 @@
   height: 2rem;
   display: flex;
   justify-content: space-between;
+  // FIXME コンポーネントの外側の位置をここで指定するのは良くない
+  margin: auto;
 
   .bar {
     width: 0.4rem;

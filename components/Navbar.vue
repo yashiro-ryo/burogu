@@ -94,9 +94,9 @@ $navbar-height: 80px;
     }
 
     .navbar-dropdown-toggle {
-      width: 2rem;
-      height: 2rem;
-      margin: auto 2rem;
+      width: 3rem;
+      height: 3rem;
+      margin: auto 1rem;
     }
   }
 }
