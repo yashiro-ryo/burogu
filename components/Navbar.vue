@@ -11,6 +11,11 @@
           >
         </div>
         <div class="navbar-content">
+          <NuxtLink href="/articles">
+            <span class="link-item">Articles</span></NuxtLink
+          >
+        </div>
+        <div class="navbar-content">
           <NuxtLink href="/works"
             ><span class="link-item">Works</span></NuxtLink
           >

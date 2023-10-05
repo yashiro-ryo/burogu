@@ -15,6 +15,11 @@
           >
         </li>
         <li class="list-group-item">
+          <NuxtLink href="/articles"
+            ><span class="link-item">Articles</span></NuxtLink
+          >
+        </li>
+        <li class="list-group-item">
           <NuxtLink href="/works"
             ><span class="link-item">Works</span></NuxtLink
           >
