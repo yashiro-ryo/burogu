@@ -3,14 +3,12 @@
     <Navbar />
     <div class="container">
       <div class="articles">
-        <div class="articles-list">
-          <h3>Articles</h3>
-          <Article
-            v-for="article in articles"
-            :article="article"
-            :key="article.articleId"
-          />
-        </div>
+        <h3>Articles</h3>
+        <Article
+          v-for="article in articles"
+          :article="article"
+          :key="article.articleId"
+        />
       </div>
     </div>
   </div>
@@ -51,7 +49,7 @@ const articles = ref([
   }
 }
 
-.articles-list {
+.articles {
   margin-top: 60px;
 }
 </style>
