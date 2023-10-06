@@ -1,5 +1,5 @@
 <template>
-  <div id="articles-page">
+  <div class="page">
     <Navbar />
     <div class="container">
       <div class="articles">
@@ -39,14 +39,8 @@ const articles = ref([
 </script>
 
 <style lang="scss" scoped>
-#articles-page {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  min-height: 100vh;
-
-  .container {
-    margin-top: 60px;
-  }
+.container {
+  margin-top: 60px;
 }
 
 .articles {
