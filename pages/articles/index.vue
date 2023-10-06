@@ -3,7 +3,7 @@
     <Navbar />
     <div class="container">
       <div class="articles">
-        <h3>Articles</h3>
+        <h2>Articles</h2>
         <Article
           v-for="article in articles"
           :article="article"

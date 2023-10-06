@@ -1,7 +1,7 @@
 <template>
   <NuxtLink :href="`/article/${article.articleId}`">
     <div class="article">
-      <p class="article-title">{{ article.title }}</p>
+      <h3 class="article-title">{{ article.title }}</h3>
       <small class="created-date">created at: {{ article.createdAt }}</small>
     </div>
   </NuxtLink>
@@ -19,8 +19,11 @@ defineProps<{
 
 <style lang="scss" scoped>
 .article {
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 20px;
+
+  border: 1px solid #636363;
+  border-radius: 10px;
 
   &:hover {
     background-color: var(--hover-background-color);
