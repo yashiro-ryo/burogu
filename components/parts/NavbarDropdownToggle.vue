@@ -10,7 +10,7 @@
           <NuxtLink href="/"><span class="link-item">Home</span></NuxtLink>
         </li>
         <li class="list-group-item">
-          <NuxtLink href="/aboutme"
+          <NuxtLink href="/about"
             ><span class="link-item">About Me</span></NuxtLink
           >
         </li>
