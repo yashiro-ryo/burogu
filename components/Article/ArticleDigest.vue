@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink :href="`/article/${article.articleId}`">
+  <NuxtLink :href="`/articles/${article.id}`">
     <div class="article">
       <h3 class="article-title">{{ article.title }}</h3>
       <small class="created-date">created at: {{ article.createdAt }}</small>
@@ -10,7 +10,7 @@
 <script setup lang="ts">
 defineProps<{
   article: {
-    articleId: number;
+    id: number;
     title: string;
     createdAt: string;
   };

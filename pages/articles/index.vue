@@ -4,10 +4,10 @@
     <div class="container">
       <div class="articles">
         <h2>Articles</h2>
-        <Article
-          v-for="article in articles"
+        <ArticleDigest
+          v-for="article in articles.getArticleDigests()"
           :article="article"
-          :key="article.articleId"
+          :key="article.id"
         />
       </div>
     </div>
@@ -16,26 +16,8 @@
 
 <script setup lang="ts">
 import Navbar from "~/components/Navbar.vue";
-import Article from "./Article.vue";
-import { ref } from "vue";
-
-const articles = ref([
-  {
-    articleId: 1,
-    title: "初ブログ",
-    createdAt: "2023/09/12",
-  },
-  {
-    articleId: 2,
-    title: "オブジェクト指向UIを読んで",
-    createdAt: "2023/10/07",
-  },
-  {
-    articleId: 3,
-    title: "DDDを勉強して",
-    createdAt: "2023/10/01",
-  },
-]);
+import ArticleDigest from "~/components/Article/ArticleDigest.vue";
+import { articles } from "~/entity/blogNeta";
 </script>
 
 <style lang="scss" scoped>
